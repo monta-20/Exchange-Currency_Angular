@@ -1,0 +1,93 @@
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+display:block;
+  box-sizing: border-box;
+  margin: auto;
+  
+  
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  margin: auto;
+  background-color: purple; /* Background color */
+}
+
+.wrapper {
+  margin-top: 115px;
+  width: 400px; /* Increased width for better layout */
+  background: #fff; /* Form background color */
+  padding: 40px; /* Increased padding */
+  border-radius: 10px; /* Slightly more rounded corners */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+  text-align: center; /* Center text */
+  
+}
+
+.wrapper header {
+  font-size: 28px; /* Larger font size for title */
+  font-weight: 700; /* Bolder font weight */
+  color: purple; /* Title color */
+  margin-bottom: 20px; /* Space between title and form */
+  text-transform: uppercase; /* Makes text all uppercase */
+  letter-spacing: 1.5px; /* Adds spacing between letters */
+  border-bottom: 2px solid purple; /* Adds a border below the title */
+  padding-bottom: 10px; /* Space below the title text */
+}
+
+.wrapper form {
+  margin: 40px 0 20px 0; /* Space around the form */
+}
+
+.wrapper form input,
+.wrapper form select,
+.wrapper form button {
+  width: 100%; /* Full width for inputs and buttons */
+  border: none;
+  outline: none;
+  border-radius: 5px; /* Rounded corners */
+}
+
+.wrapper form input {
+  height: 50px; /* Input height */
+  padding: 0 15px; /* Input padding */
+  border: 1px solid #999; /* Border color */
+  font-size: 17px; /* Font size */
+}
+
+.wrapper form input:focus {
+  border: 2px solid purple; /* Border color on focus */
+}
+
+.wrapper form .drop-list {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between dropdowns */
+  margin-top: 20px; /* Margin above dropdowns */
+}
+
+.wrapper form .exchange_rate {
+  font-size: 16px; /* Font size for exchange rate */
+  margin: 20px 0 30px; /* Margin around exchange rate */
+}
+
+.wrapper form button {
+  height: 52px; /* Button height */
+  background: purple; /* Button background color */
+  color: #fff; /* Button text color */
+  font-size: 17px; /* Button font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.wrapper form button:hover {
+  background: transparent; /* Button background color on hover */
+  color: purple; /* Button text color on hover */
+  border: 2px solid purple; /* Button border on hover */
+}

@@ -1,0 +1,37 @@
+<div class="wrapper">
+    <header>Exchange Currency</header>
+    <form (submit)="convertCurrency(); $event.preventDefault()">
+      <div class="amount">
+        <p>Enter Amount</p>
+        <input type="text" [(ngModel)]="amount" />
+      </div>
+      <div class="drop-list">
+        <div class="from">
+          <p>From</p>
+          <div class="select-box">
+            <select [(ngModel)]="fromCurrency">
+              <option *ngFor="let currency of currencies" [value]="currency">
+                {{ currency }}
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+        <div class="to">
+          <p>To</p>
+          <div class="select-box">
+            <select [(ngModel)]="toCurrency">
+              <option *ngFor="let currency of currencies" [value]="currency">
+                {{ currency }}
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="exchange_rate">
+        Converted Amount: {{ convertedAmount | number : '1.2-2' }}
+      </div>
+      <button type="submit">Get Exchange Rate</button>
+    </form>
+  </div>
+  
